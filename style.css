@@ -1,3 +1,22 @@
+body{
+    margin:0;
+    padding:0;
+}
+.wrapper {
+    height: 100vh;
+    width:100vw;
+    overflow-y: auto;
+    overflow-x:hidden;
+    perspective: 10px;
+    margin:0;
+}
+.footer{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    color: white;
+    box-shadow: 0 0 2px black;
+}
 .page {
     height: 95vh;
     width: 100vw;
@@ -6,17 +25,21 @@
     border-bottom: solid 1px black;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    color: white;
+    background-color: rgb(7, 28, 40);
 }
 a {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
     font-size: 24px;
     height: 48px;
-    
+    transition-property: font-size;
+    transition-duration: 0.5s;
 }
 a:hover {
-    color: blue;
+    color: lightblue;
     text-decoration: underline;
+    font-size: 36px;
 }
 .tictactoe {
     padding-left: 15%;
@@ -33,10 +56,38 @@ p {
     width: 80%;
     border: 1px solid black;
     margin-bottom: 60px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+.TicTacToeImg:hover{
+    transform: skew(0deg, 0deg) scale(1.2);
+}
+.introPage{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index:-1;
+}
+.welcome {
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 6rem;
+}
+.mountains, .trees{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
 
 }
-*{
-    outline: 1px solid red;
-    padding: 0;
-    margin: 0;
+.trees{
+    transform: translateZ(-5px) scale(1.5);
+}
+.mountains{
+    transform: translateZ(-10px) scale(2) ;
 }
