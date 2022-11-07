@@ -1,0 +1,42 @@
+.page {
+    height: 95vh;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+    border-bottom: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    height: 48px;
+    
+}
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.tictactoe {
+    padding-left: 15%;
+}
+p {
+    font-size: 20px;
+    width: 30%;
+    position: relative;
+    top: 45%;
+}
+.TicTacToeImg{
+    transform: skew(2deg, 2deg);
+    height: auto;
+    width: 80%;
+    border: 1px solid black;
+    margin-bottom: 60px;
+
+}
+*{
+    outline: 1px solid red;
+    padding: 0;
+    margin: 0;
+}
