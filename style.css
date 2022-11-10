@@ -26,12 +26,12 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: white;
-    background-color: rgb(7, 28, 40);
+    background-color: rgb(13, 39, 45);
 }
 a {
     text-decoration: none;
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 36px;
     height: 48px;
     transition-property: font-size;
     transition-duration: 0.5s;
@@ -39,16 +39,15 @@ a {
 a:hover {
     color: lightblue;
     text-decoration: underline;
-    font-size: 36px;
+    font-size: 48px;
 }
-.tictactoe {
-    padding-left: 15%;
-}
+
 p {
     font-size: 20px;
     width: 30%;
     position: relative;
     top: 45%;
+    left: 10%;
 }
 .TicTacToeImg{
     transform: skew(2deg, 2deg);
@@ -59,9 +58,13 @@ p {
     transition-property: transform;
     transition-duration: 1s;
     transition-delay: 0s;
+    padding-left: 8rem;
 }
 .TicTacToeImg:hover{
     transform: skew(0deg, 0deg) scale(1.2);
+}
+.library{
+    background-image: url(/src/Page2/pexels-engin-akyurt-2767814.jpg);
 }
 .introPage{
     position: relative;
@@ -71,6 +74,7 @@ p {
     height: 100%;
     transform-style: preserve-3d;
     z-index:-1;
+    transform: translateX(-6px);
 }
 .welcome {
     color: white;
@@ -81,12 +85,11 @@ p {
     position:absolute;
     width: 100%;
     height: 100%;
-
     z-index: -1;
 
 }
 .trees{
-    transform: translateZ(-5px) scale(1.5);
+    transform: translateZ(-5px) translateX(4.5px) scale(1.5);
 }
 .mountains{
     transform: translateZ(-10px) scale(2) ;
