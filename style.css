@@ -18,26 +18,26 @@ body{
     box-shadow: 0 0 2px black;
 }
 .page {
-    height: 95vh;
+    height: 100vh;
     width: 100vw;
     text-align: center;
-    padding-top: 5vh;
     border-bottom: solid 1px black;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: white;
-    background-color: rgb(13, 39, 45);
+    color: rgb(37, 37, 37);
+    background-color: rgb(219, 216, 216);
+    padding-left: 5vw;
 }
 a {
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     font-size: 36px;
     height: 48px;
     transition-property: font-size;
     transition-duration: 0.5s;
 }
 a:hover {
-    color: lightblue;
+    color: rgb(30, 30, 30);
     text-decoration: underline;
     font-size: 48px;
 }
@@ -45,26 +45,21 @@ a:hover {
 p {
     font-size: 20px;
     width: 30%;
-    position: relative;
-    top: 45%;
-    left: 10%;
+    padding-top: 35vh;
+    padding-left: 3vw;
 }
-.TicTacToeImg{
+.Img{
     transform: skew(2deg, 2deg);
     height: auto;
     width: 80%;
     border: 1px solid black;
-    margin-bottom: 60px;
     transition-property: transform;
     transition-duration: 1s;
     transition-delay: 0s;
-    padding-left: 8rem;
+    margin-left: 8rem;
 }
-.TicTacToeImg:hover{
+.Img:hover{
     transform: skew(0deg, 0deg) scale(1.2);
-}
-.library{
-    background-image: url(/src/Page2/pexels-engin-akyurt-2767814.jpg);
 }
 .introPage{
     position: relative;
@@ -74,7 +69,7 @@ p {
     height: 100%;
     transform-style: preserve-3d;
     z-index:-1;
-    transform: translateX(-6px);
+    transform: translateX(-8px);
 }
 .welcome {
     color: white;
@@ -94,3 +89,28 @@ p {
 .mountains{
     transform: translateZ(-10px) scale(2) ;
 }
+.thumbnail iframe {
+    width: 1440px;
+    height: 900px;
+  }
+  .thumbnail {
+    position: relative;
+    -ms-zoom: 0.45;
+    -moz-transform: scale(0.45);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.45);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.45);
+    -webkit-transform-origin: 0 0;
+  }
+  .thumbnail-container{
+    margin-left: 5rem;
+    width: 40vw;
+    height: 25vh;
+    padding-top: 15vh;
+  }
+
+  .leftCol {
+    padding-top: 5vh;
+    padding-left: 19vh;
+  }
